@@ -9,13 +9,32 @@
     --dark-blue: hsl(249, 10%, 26%);
     --grayish-blue: hsl(246, 25%, 77%);
     --white: #FFFFFF;
+    --main-font: 'Poppins';
 }
-.white-text {
-    color: var(--white);
+@font-face {
+    font-family: Poppins;
+    font-weight: normal;
+    src: url(./assets/fonts/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Poppins;
+    font-weight: 500;
+    src: url(./assets/fonts/Poppins-Medium.ttf)
+}
+@font-face {
+    font-family: Poppins;
+    font-weight: 600;
+    src: url(./assets/fonts/Poppins-SemiBold.ttf)
+}
+@font-face {
+    font-family: Poppins;
+    font-weight: bold;
+    src: url(./assets/fonts/Poppins-Bold.ttf);
 }
 body {
     background-color: var(--red);
     background-image: url(images/bg-intro-desktop.png);
+    font-family: var(--main-font);
 }
 .container {
     display: flex;
@@ -31,6 +50,9 @@ body {
 }
 h1 {
     margin-bottom: 2rem;
+}
+.white-text {
+    color: var(--white);
 }
 .try-it-free {
     background-color: var(--blue);
