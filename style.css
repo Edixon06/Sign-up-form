@@ -96,6 +96,12 @@ a {
     box-shadow: 0 -4px 0 green inset;
     color: var(--white);
 }
+.form .warning-input {
+    border: 2px solid red;
+}
+.form .succeed-input {
+    border: 2px solid var(--green);
+}
 
 /* Estilos modal login */
 .modal {
